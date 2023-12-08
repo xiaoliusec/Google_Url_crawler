@@ -18,21 +18,21 @@ options:
 以"学校"为关键字搜索，爬取2页url链接
 
 ```
-python3 -s 学校 -n 2
+python3 Google_Url_Crawler.py -s 学校 -n 2
 ```
 
 Google语法搜索
 
 ```
-python3 -s "inurl:php?id=10" -n 3
+python3 Google_Url_Crawler.py -s "inurl:php?id=10" -n 3
 ```
 
 ```
-python3 -s "inurl:php?id=10 上海" -n 3
+python3 Google_Url_Crawler.py -s "inurl:php?id=10 上海" -n 3
 ```
 
 ```
-python3 -s "site:baidu.com filetype:pdf" -n 3
+python3 Google_Url_Crawler.py -s "site:baidu.com filetype:pdf" -n 3
 ```
 
 
