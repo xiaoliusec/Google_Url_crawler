@@ -10,7 +10,7 @@ def get_search_results(query, page=0):
     }
     res = requests.get(url=url, headers=headers)
     soup = BeautifulSoup(res.text, 'html.parser')
-    links = [link.get('href') for link in soup.findAll('a', {'jscontroller': 'M9mgyc'}) if "google.com" not in link.get('href')]
+    links = [link.get('href') for link in soup.findAll('a', {'jsname': 'UWckNb'}) if "google.com" not in link.get('href')]
     return links
 
 
@@ -28,6 +28,7 @@ if __name__ == '__main__':
     with open('links.txt', 'w') as f:
         for i in range(0, num):
             links = get_search_results(query, page=i * 10)
+            # print(links)
             for link in links:
                 f.write(link + '\n')
 
