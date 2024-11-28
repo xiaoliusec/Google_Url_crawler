@@ -2,7 +2,7 @@
 
 ## 注意事项
 
-如抓取不到链接，修改a标签的属性
+如抓取不到链接，google搜索任意关键字，查看元素，修改a标签的属性
 <img width="1185" alt="image" src="https://github.com/user-attachments/assets/b64bc88f-e355-40a6-946f-d63eb595cbd5">
 <img width="999" alt="image" src="https://github.com/user-attachments/assets/ab5b7f89-a15b-4ce5-9945-f9b90a0ee606">
 
