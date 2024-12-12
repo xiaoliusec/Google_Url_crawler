@@ -8,7 +8,7 @@ def get_search_results(query, page=0):
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
     }
-    res = requests.get(url=url, headers=headers)
+    res = requests.get(url=url, headers=headers,verify=False,timeout=10)
     soup = BeautifulSoup(res.text, 'html.parser')
     links = [link.get('href') for link in soup.findAll('a', {'jsname': 'UWckNb'}) if "google.com" not in link.get('href')]
     return links
